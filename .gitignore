@@ -1,0 +1,39 @@
+<html>
+<html>
+<head> <title> Trabalho de Tecnologias WEB </title> </head>
+<body>
+
+<textarea id="box" rows="10" cols="50"></textarea>
+
+<script>
+var cars = "";
+var text = "";
+var i;
+var saida = ""
+for (i = 0; i < cars.length; i++)
+{
+    text += ((cars[i]).charCodeAt(0) + 17) + " ";
+	
+}
+
+
+
+
+text = text.split(" ")
+
+for (i = 0; i < cars.length; i++) { 
+    saida += String.fromCharCode(text[i] - 17);
+}
+
+
+document.getElementById("demo").innerHTML = saida;
+</script>
+
+<br>
+
+<button onclick="">Criptografar</button>
+<button onclick="">Descriptografar</button>
+
+
+</body>
+</html>
